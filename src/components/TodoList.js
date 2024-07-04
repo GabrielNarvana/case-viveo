@@ -21,7 +21,7 @@ function TodoList() {
     text,
     completed: false
     };
-    setTasks([…tasks, newTask]);
+    setTasks([...tasks, newTask]);
     setText('');
     }
    function deleteTask(id) {
@@ -30,7 +30,7 @@ function TodoList() {
    function toggleCompleted(id) {
     setTasks(tasks.map(task => {
     if (task.id === id) {
-    return {…task, completed: !task.completed};
+    return {...task, completed: !task.completed};
     } else {
     return task;
     } 
